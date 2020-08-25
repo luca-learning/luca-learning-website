@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/luca-learning-website/static/js/main.5cffe71c.chunk.js",
-    "main.js.map": "/luca-learning-website/static/js/main.5cffe71c.chunk.js.map",
+    "main.js": "/luca-learning-website/static/js/main.39be558f.chunk.js",
+    "main.js.map": "/luca-learning-website/static/js/main.39be558f.chunk.js.map",
     "runtime-main.js": "/luca-learning-website/static/js/runtime-main.28131ff5.js",
     "runtime-main.js.map": "/luca-learning-website/static/js/runtime-main.28131ff5.js.map",
     "static/js/2.ca501943.chunk.js": "/luca-learning-website/static/js/2.ca501943.chunk.js",
     "static/js/2.ca501943.chunk.js.map": "/luca-learning-website/static/js/2.ca501943.chunk.js.map",
     "index.html": "/luca-learning-website/index.html",
-    "precache-manifest.88c36ccecbc661b3ed3cbbd34cf76fb7.js": "/luca-learning-website/precache-manifest.88c36ccecbc661b3ed3cbbd34cf76fb7.js",
+    "precache-manifest.4abaa36205f079928117c77827221e3a.js": "/luca-learning-website/precache-manifest.4abaa36205f079928117c77827221e3a.js",
     "service-worker.js": "/luca-learning-website/service-worker.js",
     "static/js/2.ca501943.chunk.js.LICENSE.txt": "/luca-learning-website/static/js/2.ca501943.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.28131ff5.js",
     "static/js/2.ca501943.chunk.js",
-    "static/js/main.5cffe71c.chunk.js"
+    "static/js/main.39be558f.chunk.js"
   ]
 }
