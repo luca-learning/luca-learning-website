@@ -68,6 +68,7 @@ export const Container = styled.div<ContainerProps>`
         margin: 0.4rem 1rem 0 0;
         padding: 0 0.3rem;
         color: ${pallete.primary_2};
+        font-weight: 700;
         cursor: pointer;   
 
         > button {

@@ -14,6 +14,9 @@ import { Container } from './styles';
 
 import GlobalStyles from '../../styles/global';
 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 function Main() {
   const { isSticky, element } = useSticky()
 

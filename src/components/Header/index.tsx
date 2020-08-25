@@ -12,6 +12,11 @@ const Header = ({ sticky }: HeaderProps) => {
     el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  const handleParent = () => {
+    const el = document.getElementById("parent");
+    el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
   return (
     <Container sticky={sticky}>
       <header>
@@ -23,7 +28,7 @@ const Header = ({ sticky }: HeaderProps) => {
         </div>
         <ul>
           <li onClick={handleHowWork}>Porque estudiar con Luca</li>
-          <li>Los padres nos aman</li>
+          <li onClick={handleParent}>Los padres nos aman</li>
           <li><button>Regístrate ahora</button></li>
         </ul>
       </header>

@@ -7,11 +7,6 @@ interface WelcomeProps {
 }
 
 const Welcome = ({ element }: WelcomeProps) => {
-  const handleKnowMore = () => {
-    const el = document.getElementById("help-you-study");
-    el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-
   return (
     <Container>
       <section>

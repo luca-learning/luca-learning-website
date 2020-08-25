@@ -20,15 +20,15 @@ const Advantages = () => {
               <p>En función de sus preferencias, grado de estudio y uso, le ofreceremos un horario de estudio personalizado</p>
             </div>
             <div>
-              <GiGamepad color={pallete.primary_3} size={48} />
+              <GiGamepad color={pallete.primary_2} size={48} />
               <p>Toda la plataforma está gamificada con puntos y cuestionarios en cada lección</p>
             </div>
             <div>
-              <MdQuestionAnswer color={pallete.primary_1} size={48} />
+              <MdQuestionAnswer color={pallete.primary_3} size={48} />
               <p>Puede probar sus habilidades desafiando a otros estudiantes que están estudiando la misma materia</p>
             </div>            
             <div>
-              <GiCalendar color={pallete.primary_3} size={48} />
+              <GiCalendar color={pallete.primary_1} size={48} />
               <p>Con nuestro planificador de estudios, puede crear un plan personalizado para un examen</p>
             </div>
           </CardGroup>
