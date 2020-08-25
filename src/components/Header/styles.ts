@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
+import pallete from '../../styles/colors';
 
 interface ContainerProps {
   sticky: boolean;
@@ -33,11 +34,11 @@ export const Container = styled.div<ContainerProps>`
     width: 100%;   
 
     ${props => props.sticky && css`
-      background: #3843d0;
+      background: ${pallete.primary_1};
       position: fixed;
       top: 0;
       left: 0;
-      box-shadow: 1px 1px 4px #888888;
+      box-shadow: 1px 1px 4px ${pallete.primary_1};
       animation: ${moveDown} 0.5s ease-in-out;
     `}
 
@@ -45,8 +46,9 @@ export const Container = styled.div<ContainerProps>`
       animation: ${rotate} 0.7s ease-in-out 0.5s;
 
       > h1 {
+        font-weight: 900;
         > span {
-          color: #f96654;
+          color: ${pallete.primary_2};
           font-weight: 900;
         }
       }
@@ -58,14 +60,18 @@ export const Container = styled.div<ContainerProps>`
       align-items: center;
       justify-content: center;
 
+      @media (max-width:600px) {
+        display: none;
+      }
+
       > li {
         margin: 0.4rem 1rem 0 0;
         padding: 0 0.3rem;
         cursor: pointer;   
 
         > button {
-          background: #f96654;
-          color: #fff;
+          background: ${pallete.primary_2};
+          color: ${pallete.secondary_white};
           padding: 0.7rem 1.5rem;
           border: none;
           border-radius: 20px;

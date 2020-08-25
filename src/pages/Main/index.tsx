@@ -3,8 +3,9 @@ import React from 'react';
 import Header from '../../components/Header';
 
 import Welcome from '../../components/Sections/Welcome';
-import HelpYouStudy from '../../components/Sections/HelpYouStudy';
-import Content from '../../components/Sections/Content';
+import Products from '../../components/Sections/Products';
+import Advantages from '../../components/Sections/Advantages';
+import Parents from '../../components/Sections/Parents';
 
 import useSticky from '../../hooks/useSticky';
 
@@ -20,8 +21,9 @@ function Main() {
       <Header sticky={isSticky} />
 
       <Welcome element={element} />
-      <HelpYouStudy />
-      <Content />
+      <Products />
+      <Advantages />
+      <Parents />
 
       <GlobalStyles />
     </Container>

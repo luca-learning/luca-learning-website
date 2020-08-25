@@ -6,10 +6,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
 
     > div {
-      max-width: 850px;
+      max-width: 1200px;
       margin: 5rem;
 
       > h1 {
@@ -29,15 +28,20 @@ export const Container = styled.div`
 export const CardGroup = styled.div`
   display: flex;
 
+  @media (max-width:600px) {
+    display: grid;
+  }
+
   > div {
     width: 300px;
 
     margin-right: 24px;
     margin-top: 50px;
 
-    box-shadow: 1px 1px 8px #888888;
-
-    position: relative;
+    @media (max-width:600px) {
+      width: 100%;
+      margin-right: 0;
+    }
 
     > span {
       position: absolute;
@@ -48,12 +52,12 @@ export const CardGroup = styled.div`
     }
 
     > svg {
-      margin-top: 72px;
+      margin-top: 24px;
     }
 
     > p {
       padding: 30px;
-      font-size: 14px;
+      font-size: 16px;
       color: #595959;   
     }
   }

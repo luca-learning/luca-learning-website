@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   section {
-    background-color: #3843d0;
-    height: 100vh;
+    background-color: #875C74;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,15 +11,14 @@ export const Container = styled.div`
 
     > div {
       max-width: 850px;
-      padding: 24px;
 
       > h1 {
-        font-size: 50px;
+        font-size: 40px;
       }
 
       > p {
         margin-top: 30px;
-        font-size: 30px;
+        font-size: 24px;
         color: #fff;
         line-height: 40px;
       }

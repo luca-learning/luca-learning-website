@@ -22,11 +22,10 @@ const Header = ({ sticky }: HeaderProps) => {
           </h1>
         </div>
         <ul>
-          <li onClick={handleHowWork}>Como funciona</li>
-          <li>Contenido</li>
-          <li><button>Regístrate y gana</button></li>
+          <li onClick={handleHowWork}>Porque estudiar con Luca</li>
+          <li>Los padres nos aman</li>
+          <li><button>Regístrate ahora</button></li>
         </ul>
-
       </header>
     </Container>
   )

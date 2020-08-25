@@ -18,7 +18,6 @@ const Welcome = ({ element }: WelcomeProps) => {
         <div ref={element}>
           <h1>Revolucionaremos la forma en que aprendes</h1>
           <p>Con clases exclusivas y un horario de estudio adaptable a tu perfil, podrás estudiar cuando y como quieras</p>
-          <button onClick={handleKnowMore}>Saber más</button>
         </div>
       </section>
     </Container>

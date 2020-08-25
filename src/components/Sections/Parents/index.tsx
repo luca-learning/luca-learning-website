@@ -2,16 +2,16 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Content = () => {
+const Parents = () => {
   return (
     <Container>
       <section id="content">
         <div>
-          <h1>Contenido</h1>
+          <h1>Our students parents love us</h1>
         </div>
       </section>
     </Container>
   )
 }
 
-export default Content
+export default Parents
