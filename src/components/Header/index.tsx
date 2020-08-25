@@ -1,4 +1,5 @@
 import React from "react"
+import { MdMenu } from 'react-icons/md';
 
 import { Container } from './styles';
 
@@ -31,6 +32,9 @@ const Header = ({ sticky }: HeaderProps) => {
           <li onClick={handleParent}>Los padres nos aman</li>
           <li><button>Regístrate ahora</button></li>
         </ul>
+        <div className="mobile-menu">
+          <MdMenu color="#fff" size={28} />
+        </div>
       </header>
     </Container>
   )

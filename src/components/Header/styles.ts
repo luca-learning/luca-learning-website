@@ -88,5 +88,11 @@ export const Container = styled.div<ContainerProps>`
         }
       }
     }
+
+    @media (min-width:600px) {
+      .mobile-menu {
+        display: none;
+      }
+    }
   }
 `;

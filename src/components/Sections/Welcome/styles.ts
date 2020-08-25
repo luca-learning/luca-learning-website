@@ -13,8 +13,17 @@ export const Container = styled.div`
     > div {
       max-width: 900px;
 
+      @media (max-width:600px) {
+        overflow: hidden;
+        max-width: 300px;
+      }
+
       > h1 {
         font-size: 40px;
+
+        @media (max-width:600px) {
+          font-size: 32px;
+        }
       }
 
       > p {
@@ -22,6 +31,10 @@ export const Container = styled.div`
         font-size: 24px;
         color: ${pallete.secondary_white};
         line-height: 30px;
+
+        @media (max-width:600px) {
+          font-size: 18px;
+        }
       }
 
       > button {
