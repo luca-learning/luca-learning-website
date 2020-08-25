@@ -14,15 +14,6 @@ const moveDown = keyframes`
   }
 `;
 
-const rotate = keyframes`
-  0% {
-    transform: rotateY(360deg);
-  }
-  100% {
-    transform: rotateY(0rem);
-  }
-`;
-
 export const Container = styled.div<ContainerProps>`
   header {
     display: flex;
@@ -43,8 +34,6 @@ export const Container = styled.div<ContainerProps>`
     `}
 
     > div {
-      animation: ${rotate} 0.7s ease-in-out 0.5s;
-
       > h1 {
         font-weight: 900;
         > span {
@@ -96,3 +85,83 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 `;
+
+interface StyledMenuProps {
+  open: boolean;
+}
+
+export const StyledMenu = styled.nav<StyledMenuProps>`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: ${pallete.primary_1};
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: transform 0.3s ease-in-out;
+
+  .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    margin-right: 34px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+
+  button {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: ${pallete.primary_2};
+    text-decoration: none;
+    transition: color 0.3s linear;
+    background: transparent;
+    border: 0;
+
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &:hover {
+      color: ${pallete.secondary_white};
+    }
+  }
+`
+
+export const StyledBurger = styled.button<StyledMenuProps>`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: ${({ open }) => open ? '#0D0C1D' : '#EFFFFA'};
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+`
