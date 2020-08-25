@@ -13,7 +13,16 @@ const Parents = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     nextArrow: <MdNavigateNext color="#000" size={48} />,
-    prevArrow: <MdNavigateBefore color="#000" size={48} />
+    prevArrow: <MdNavigateBefore color="#000" size={48} />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (

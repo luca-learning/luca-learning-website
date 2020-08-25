@@ -12,7 +12,6 @@ export const Container = styled.div`
 
     > div {
       max-width: 900px;
-      padding: 0 48px;
 
       > h1 {
         font-size: 40px;

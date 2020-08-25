@@ -21,6 +21,13 @@ export const Container = styled.div`
       max-width: 850px;
       margin-bottom: 5rem;
 
+      @media (max-width:600px) {
+        .title {
+          max-width: 850px;
+        }
+        max-width: 250px;
+      }
+
       > h1 {
         font-size: 50px;
         color: ${pallete.secondary_dark};
