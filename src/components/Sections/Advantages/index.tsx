@@ -29,7 +29,7 @@ const Advantages = () => {
             </div>            
             <div>
               <GiCalendar color={pallete.primary_2} size={48} />
-              <p>Después de terminar su contenido, la plataforma registrará su aprendizaje para sugerir un mejor contenido en el futuro</p>
+              <p>Con nuestro planificador de estudios, puede crear un plan personalizado para un examen</p>
             </div>
           </CardGroup>
         </div>
