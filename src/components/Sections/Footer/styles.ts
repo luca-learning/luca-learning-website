@@ -2,18 +2,16 @@ import styled from 'styled-components';
 import pallete from '../../../styles/colors';
 
 export const Container = styled.div`
-  background: ${pallete.secondary_white};
-  height: 600px;
-  
   section {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    background: ${pallete.primary_1};
+    height: 400px;
 
     > div {
-      max-width: 850px;
+      max-width: 1200px;
       margin: 5rem;
 
       > h1 {
@@ -24,7 +22,7 @@ export const Container = styled.div`
       > p {
         margin-top: 30px;
         font-size: 30px;
-        color: ${pallete.secondary_white};
+        color: ${pallete.secondary_text};
       }
     }
   }

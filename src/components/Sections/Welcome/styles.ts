@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import pallete from '../../../styles/colors';
 
 export const Container = styled.div`
   section {
-    background-color: #875C74;
+    background-color: ${pallete.primary_1};
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -10,7 +11,8 @@ export const Container = styled.div`
     text-align: center;
 
     > div {
-      max-width: 850px;
+      max-width: 900px;
+      padding: 0 48px;
 
       > h1 {
         font-size: 40px;
@@ -19,13 +21,13 @@ export const Container = styled.div`
       > p {
         margin-top: 30px;
         font-size: 24px;
-        color: #fff;
-        line-height: 40px;
+        color: ${pallete.secondary_white};
+        line-height: 30px;
       }
 
       > button {
-        background: #f96654;
-        color: #fff;
+        background: ${pallete.primary_2};
+        color: ${pallete.secondary_white};
         margin-top: 2rem;
         padding: 0.7rem 1.5rem;
         border: none;

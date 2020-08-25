@@ -7,7 +7,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 200px;
+    
+    @media (min-width:600px) {
+      height: 200px;
+    }
 
     > div {
       max-width: 850px;
@@ -21,6 +24,7 @@ export const CardGroup = styled.div`
 
   @media (max-width:600px) {
     display: grid;
+    margin: 0 48px;
   }
 
   > div {
@@ -60,14 +64,6 @@ export const CardGroup = styled.div`
       color: ${pallete.primary_2};  
       font-weight: 900;
     }
-
-    /* > span {
-      position: absolute;
-      left: calc(50% - 45px);
-      top: -27px;
-      font-size: 64px;
-      font-weight: 900;
-    } */
 
     > svg {
       margin-top: 24px;

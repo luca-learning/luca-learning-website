@@ -48,7 +48,7 @@ export const Container = styled.div<ContainerProps>`
       > h1 {
         font-weight: 900;
         > span {
-          color: ${pallete.primary_2};
+          color: ${pallete.primary_3};
           font-weight: 900;
         }
       }
@@ -67,15 +67,23 @@ export const Container = styled.div<ContainerProps>`
       > li {
         margin: 0.4rem 1rem 0 0;
         padding: 0 0.3rem;
+        color: ${pallete.primary_2};
         cursor: pointer;   
 
         > button {
-          background: ${pallete.primary_2};
-          color: ${pallete.secondary_white};
+          background: ${pallete.secondary_white};
+          color: ${pallete.secondary_dark};
           padding: 0.7rem 1.5rem;
           border: none;
           border-radius: 20px;
           font-weight: 500;
+
+          transition: all .3s;
+
+          &:hover {
+            color: ${pallete.secondary_white};
+            background: ${pallete.primary_2};
+          }
         }
       }
     }

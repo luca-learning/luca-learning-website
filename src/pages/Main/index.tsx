@@ -6,6 +6,7 @@ import Welcome from '../../components/Sections/Welcome';
 import Products from '../../components/Sections/Products';
 import Advantages from '../../components/Sections/Advantages';
 import Parents from '../../components/Sections/Parents';
+import Footer from '../../components/Sections/Footer';
 
 import useSticky from '../../hooks/useSticky';
 
@@ -24,6 +25,7 @@ function Main() {
       <Products />
       <Advantages />
       <Parents />
+      <Footer />
 
       <GlobalStyles />
     </Container>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import pallete from '../../../styles/colors';
 
 export const Container = styled.div`
   section {
@@ -13,13 +14,13 @@ export const Container = styled.div`
 
       > h1 {
         font-size: 50px;
-        color: #262626;
+        color: ${pallete.secondary_dark};
       }
 
       > p {
         margin-top: 30px;
         font-size: 30px;
-        color: #595959;
+        color: ${pallete.secondary_text};
       }
     }
   }
@@ -58,7 +59,7 @@ export const CardGroup = styled.div`
     > p {
       padding: 30px;
       font-size: 16px;
-      color: #595959;   
+      color: ${pallete.secondary_text};   
     }
   }
 `;

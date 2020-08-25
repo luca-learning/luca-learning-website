@@ -16,19 +16,19 @@ const WeAre = () => {
             <div>
               <h1>
                 Luca 
-                <span>.</span>
+                <span style={{ color: pallete.primary_3 }}>.</span>
               </h1>
-              <h2>App</h2>  
-              <MdStayCurrentPortrait color={pallete.primary_2} size={48} />
+              <h2 style={{ color: pallete.primary_3 }}>App</h2>  
+              <MdStayCurrentPortrait color={pallete.primary_3} size={48} />
               <p>Ofrecemos una aplicación simple y fácil de usar con una amplia colección de contenido</p>
             </div>
             <div>
               <h1>
                 Luca 
-                <span style={{ color: pallete.primary_1 }}>.</span>
+                <span style={{ color: pallete.primary_3 }}>.</span>
               </h1>
-              <h2 style={{ color: pallete.primary_1 }}>Liveclasses</h2>
-              <MdPeople color={pallete.primary_1} size={48} /> 
+              <h2 style={{ color: pallete.primary_3 }}>Liveclasses</h2>
+              <MdPeople color={pallete.primary_3} size={48} /> 
               <p>Puede registrarse en programas de tutoría en vivo para aprender más</p>
             </div>
             <div>
