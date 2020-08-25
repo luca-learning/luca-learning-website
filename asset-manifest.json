@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/luca-learning-website/static/js/main.9832e3a1.chunk.js",
-    "main.js.map": "/luca-learning-website/static/js/main.9832e3a1.chunk.js.map",
+    "main.js": "/luca-learning-website/static/js/main.7c0f30c0.chunk.js",
+    "main.js.map": "/luca-learning-website/static/js/main.7c0f30c0.chunk.js.map",
     "runtime-main.js": "/luca-learning-website/static/js/runtime-main.28131ff5.js",
     "runtime-main.js.map": "/luca-learning-website/static/js/runtime-main.28131ff5.js.map",
     "static/css/2.45b22811.chunk.css": "/luca-learning-website/static/css/2.45b22811.chunk.css",
-    "static/js/2.cba2579b.chunk.js": "/luca-learning-website/static/js/2.cba2579b.chunk.js",
-    "static/js/2.cba2579b.chunk.js.map": "/luca-learning-website/static/js/2.cba2579b.chunk.js.map",
+    "static/js/2.6344b710.chunk.js": "/luca-learning-website/static/js/2.6344b710.chunk.js",
+    "static/js/2.6344b710.chunk.js.map": "/luca-learning-website/static/js/2.6344b710.chunk.js.map",
     "index.html": "/luca-learning-website/index.html",
-    "precache-manifest.2ec82a2ef291ba5c5903677eb745de32.js": "/luca-learning-website/precache-manifest.2ec82a2ef291ba5c5903677eb745de32.js",
+    "precache-manifest.141c08d2d485b7e89f670c45fb81d251.js": "/luca-learning-website/precache-manifest.141c08d2d485b7e89f670c45fb81d251.js",
     "service-worker.js": "/luca-learning-website/service-worker.js",
     "static/css/2.45b22811.chunk.css.map": "/luca-learning-website/static/css/2.45b22811.chunk.css.map",
-    "static/js/2.cba2579b.chunk.js.LICENSE.txt": "/luca-learning-website/static/js/2.cba2579b.chunk.js.LICENSE.txt",
+    "static/js/2.6344b710.chunk.js.LICENSE.txt": "/luca-learning-website/static/js/2.6344b710.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/luca-learning-website/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.28131ff5.js",
     "static/css/2.45b22811.chunk.css",
-    "static/js/2.cba2579b.chunk.js",
-    "static/js/main.9832e3a1.chunk.js"
+    "static/js/2.6344b710.chunk.js",
+    "static/js/main.7c0f30c0.chunk.js"
   ]
 }
