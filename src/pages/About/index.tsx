@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header from '../../components/Header';
 import AboutHeader from '../../components/AboutHeader';
@@ -10,6 +10,12 @@ import { Container } from './styles';
 
 const About: React.FC = () => {
   const { isSticky, element } = useSticky()
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, [])
 
   return (
     <Container>

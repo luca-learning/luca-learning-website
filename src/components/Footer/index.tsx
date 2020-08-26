@@ -14,10 +14,10 @@ const Footer: React.FC = () => {
             </h1>
             <ul>
               <li>
-                <a href="about">Sobre nosotros</a>              
+                <a href="/#/about">Sobre nosotros</a>              
               </li>
               <li>
-                <a href="/#parent">Testimonios</a>              
+                <a href="/">Testimonios</a>              
               </li>
               <li>
                 <a href="mailto:email@email.com">Contacto</a>

@@ -1,6 +1,6 @@
  
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import GlobalStyles from './styles/global';
 
@@ -10,11 +10,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Routes from './routes';
 
 const App: React.FC = () => (
-  <BrowserRouter>
+  <HashRouter basename='/'>
      <Routes />
-
     <GlobalStyles />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
