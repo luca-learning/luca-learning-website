@@ -31,7 +31,7 @@ const Contenido: React.FC = () => {
               </button>
             </div>
             <div>
-              <img src="https://lh3.googleusercontent.com/proxy/dvoSZWVa5J9EXmcVQFUyng_aG4r1NXHnuCOb61R59ImuW96TeENOW4Wr6RvGYtn7K_8g3yGiKGv9Hgt3hZUHZT-5N6ev4pfZjj6A9AQymMfzrnXciVB5zg"></img> 
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBNfjCQ9BWvVvq1FYqrjF9sVsisBvhOuhd6A&usqp=CAU"></img> 
               <h1>Inglés</h1>
               <p>
                 Estudié inglés con los mejores videos y practico conversación con otros estudiantes y tutores en la plataforma
