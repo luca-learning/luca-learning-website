@@ -32,7 +32,7 @@ const Contenido: React.FC = () => {
             </div>
             <div>
               <img 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBNfjCQ9BWvVvq1FYqrjF9sVsisBvhOuhd6A&usqp=CAU"
+                src="http://macpoli.com.br/wp-content/uploads/2015/05/icon_ingles.png"
                 alt="Ingles"
               /> 
               <h1>Inglés</h1>
