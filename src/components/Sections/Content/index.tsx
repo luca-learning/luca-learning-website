@@ -31,7 +31,10 @@ const Contenido: React.FC = () => {
               </button>
             </div>
             <div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBNfjCQ9BWvVvq1FYqrjF9sVsisBvhOuhd6A&usqp=CAU"></img> 
+              <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBNfjCQ9BWvVvq1FYqrjF9sVsisBvhOuhd6A&usqp=CAU"
+                alt="Ingles"
+              /> 
               <h1>Inglés</h1>
               <p>
                 Estudié inglés con los mejores videos y practico conversación con otros estudiantes y tutores en la plataforma
