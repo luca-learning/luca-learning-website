@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, CardGroup } from './styles';
 
-const Contenido = () => {
+const Contenido: React.FC = () => {
   return (
     <Container>
       <section id="content">

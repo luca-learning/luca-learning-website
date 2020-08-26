@@ -6,7 +6,7 @@ interface WelcomeProps {
   element: React.MutableRefObject<null>;
 }
 
-const Welcome = ({ element }: WelcomeProps) => {
+const Welcome: React.FC<WelcomeProps> = ({ element }) => {
   return (
     <Container>
       <section>

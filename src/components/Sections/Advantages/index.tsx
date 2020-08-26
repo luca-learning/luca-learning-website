@@ -7,7 +7,7 @@ import pallete from '../../../styles/colors';
 
 import { Container, CardGroup } from './styles';
 
-const Advantages = () => {
+const Advantages: React.FC = () => {
   return (
     <Container>
       <section id="help-you-study">

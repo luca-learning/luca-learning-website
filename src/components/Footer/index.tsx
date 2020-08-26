@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <Container>
       <section>
@@ -20,7 +20,7 @@ const Footer = () => {
                 <a href="/#parent">Testimonios</a>              
               </li>
               <li>
-                <a href="email@email.com">Contacto</a>
+                <a href="mailto:email@email.com">Contacto</a>
               </li>
             </ul>
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <a href="/">Ciencias</a>              
               </li>
               <li>
-                <a href="email@email.com">Inglés</a>
+                <a href="/">Inglés</a>
               </li>
             </ul>
           </div>

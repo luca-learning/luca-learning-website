@@ -6,6 +6,7 @@ import { Container, StyledBurger, StyledMenu } from './styles';
 
 interface HeaderProps {
   sticky: boolean;
+  isMain?: boolean;
 }
 
 interface BurgerProps {
@@ -16,9 +17,22 @@ interface BurgerProps {
 interface MenuProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isMain?: boolean;
 }
 
-const handleHowWork = (setOpen?: React.Dispatch<React.SetStateAction<boolean>>) => {
+const redirectTo = (section: string) => {
+  document.location.href = `/#${section}`;
+}
+
+const handleHowWork = (
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>,
+  isMain?: boolean
+) => {
+  if (!isMain) {
+    redirectTo('help-you-study');
+    return;
+  }
+
   const el = document.getElementById("help-you-study");
   el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
@@ -27,7 +41,15 @@ const handleHowWork = (setOpen?: React.Dispatch<React.SetStateAction<boolean>>) 
   }
 }
 
-const handleParent = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | undefined) => {
+const handleParent = (
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>,
+  isMain?: boolean
+) => {
+  if (!isMain) {
+    redirectTo('parent');
+    return;
+  }
+
   const el = document.getElementById("parent");
   el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
@@ -36,7 +58,15 @@ const handleParent = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | 
   }
 }
 
-const handleContent = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | undefined) => {
+const handleContent = (
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>,
+  isMain?: boolean
+) => {
+  if (!isMain) {
+    redirectTo('content');
+    return;
+  }
+
   const el = document.getElementById("content");
   el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
@@ -45,7 +75,10 @@ const handleContent = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> |
   }
 }
 
-const handleRegister = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | undefined) => {
+const handleRegister = (
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>,
+  isMain?: boolean
+) => {
   const el = document.getElementById("register");
   el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
@@ -64,29 +97,29 @@ const Burger = ({ open, setOpen }: BurgerProps) => {
   )
 }
 
-const Menu = ({ open, setOpen }: MenuProps) => {
+const Menu: React.FC<MenuProps>  = ({ open, setOpen, isMain }) => {
   return (
     <StyledMenu open={open}>
       <div className="close-button" onClick={() => setOpen(false)}>
         <AiOutlineClose fontFamily="Inter" fontWeight={900} size={48} />
       </div>
-      <button onClick={() => handleHowWork(setOpen)}>
+      <button onClick={() => handleHowWork(setOpen, isMain)}>
         Porque estudiar con Luca
       </button>
-      <button onClick={() => handleParent(setOpen)}>
+      <button onClick={() => handleParent(setOpen, isMain)}>
         Los padres nos aman
       </button>
-      <button onClick={() => handleContent(setOpen)}>
+      <button onClick={() => handleContent(setOpen, isMain)}>
         Nuestro contenido
       </button>
-      <button onClick={() => handleRegister(setOpen)}>
+      <button onClick={() => handleRegister(setOpen, isMain)}>
         Regístrate ahora
       </button>
     </StyledMenu>
   )
 }
 
-const Header = ({ sticky }: HeaderProps) => {
+const Header = ({ sticky, isMain }: HeaderProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -94,21 +127,21 @@ const Header = ({ sticky }: HeaderProps) => {
       <header>
         <div>
           <h1>
-            Luca
+            <a href="/">Luca</a>
             <span>.</span>
           </h1>
         </div>
         <ul>
-          <li onClick={() => handleHowWork()}>Porque estudiar con Luca</li>
-          <li onClick={() => handleParent()}>Los padres nos aman</li>
-          <li onClick={() => handleContent()}>Nuestro contenido</li>
+          <li onClick={() => handleHowWork(undefined, isMain)}>Porque estudiar con Luca</li>
+          <li onClick={() => handleParent(undefined, isMain)}>Los padres nos aman</li>
+          <li onClick={() => handleContent(undefined, isMain)}>Nuestro contenido</li>
           <li>
             <button onClick={() => handleRegister()}>Regístrate ahora</button>
           </li>
         </ul>
         <div className="mobile-menu">
           <Burger open={open} setOpen={setOpen} />
-          <Menu open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} isMain={isMain} />
         </div>
       </header>
     </Container>

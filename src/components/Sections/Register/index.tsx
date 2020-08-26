@@ -35,7 +35,7 @@ interface Option {
   label: string;
 }
 
-const Register = () => {
+const Register: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [level, setLevel] = useState<'pre-escolar' | 'primaria' | 'secundaria'>('pre-escolar');

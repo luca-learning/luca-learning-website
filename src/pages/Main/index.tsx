@@ -8,23 +8,18 @@ import Advantages from '../../components/Sections/Advantages';
 import Parents from '../../components/Sections/Parents';
 import Content from '../../components/Sections/Content';
 import Register from '../../components/Sections/Register';
-import Footer from '../../components/Sections/Footer';
+import Footer from '../../components/Footer';
 
 import useSticky from '../../hooks/useSticky';
 
 import { Container } from './styles';
 
-import GlobalStyles from '../../styles/global';
-
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-
-function Main() {
+const Main: React.FC = () => {
   const { isSticky, element } = useSticky()
 
   return (
     <Container>
-      <Header sticky={isSticky} />
+      <Header sticky={isSticky} isMain />
       <Welcome element={element} />
 
       <Products />
@@ -35,8 +30,6 @@ function Main() {
       <Register />
 
       <Footer />
-
-      <GlobalStyles />
     </Container>
   );
 }

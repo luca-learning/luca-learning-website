@@ -7,7 +7,7 @@ import pallete from '../../../styles/colors';
 
 import { Container, CardGroup } from './styles';
 
-const WeAre = () => {
+const Products: React.FC = () => {
   return (
     <Container>
       <section>
@@ -47,4 +47,4 @@ const WeAre = () => {
   )
 }
 
-export default WeAre
+export default Products

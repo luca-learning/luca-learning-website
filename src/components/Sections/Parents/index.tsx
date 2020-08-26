@@ -5,7 +5,7 @@ import { MdNavigateNext, MdNavigateBefore } from 'react-icons/md';
 
 import { Container, SliderContainer } from './styles';
 
-const Parents = () => {
+const Parents: React.FC = () => {
   const settings = {
     dots: true,
     infinite: false,

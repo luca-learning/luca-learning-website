@@ -36,6 +36,11 @@ export const Container = styled.div<ContainerProps>`
     > div {
       > h1 {
         font-weight: 900;
+        > a {
+          text-decoration: none;
+          color: ${pallete.secondary_white};
+        }
+
         > span {
           color: ${pallete.primary_3};
           font-weight: 900;
