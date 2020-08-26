@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container } from './styles';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -14,10 +15,10 @@ const Footer: React.FC = () => {
             </h1>
             <ul>
               <li>
-                <a href="/#/about">Sobre nosotros</a>              
+                <Link to="/about">Sobre nosotros</Link>              
               </li>
               <li>
-                <a href="/">Testimonios</a>              
+                <Link to="/">Testimonios</Link>              
               </li>
               <li>
                 <a href="mailto:email@email.com">Contacto</a>
