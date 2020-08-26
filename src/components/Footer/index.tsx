@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 <Link to="/about">Sobre nosotros</Link>              
               </li>
               <li>
-                <Link to="/">Testimonios</Link>              
+                <Link to="/?section=parent">Testimonios</Link>              
               </li>
               <li>
                 <a href="mailto:email@email.com">Contacto</a>
