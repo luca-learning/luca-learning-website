@@ -17,7 +17,7 @@ const Footer = () => {
                 <a href="about">Sobre nosotros</a>              
               </li>
               <li>
-                <a href="/">Testimonios</a>              
+                <a href="/#parent">Testimonios</a>              
               </li>
               <li>
                 <a href="email@email.com">Contacto</a>

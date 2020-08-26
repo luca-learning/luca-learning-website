@@ -3,13 +3,13 @@ import Select from 'react-select';
 
 import { Container } from './styles';
 
-const level = [
+const levelOptions = [
   { value: 'pre-escolar', label: 'Preescolar' },
   { value: 'primaria', label: 'Primaria' },
   { value: 'secundaria', label: 'Secundaria' }
 ]
 
-const classes = {
+const classesOptions = {
   'pre-escolar': [
     { value: '1th', label: 'Grado 1' },
     { value: '2th', label: 'Grado 2' },
@@ -36,10 +36,33 @@ interface Option {
 }
 
 const Register = () => {
-  const [classe, setClasse] = useState<'pre-escolar' | 'primaria' | 'secundaria'>('pre-escolar');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [level, setLevel] = useState<'pre-escolar' | 'primaria' | 'secundaria'>('pre-escolar');
+  const [classe, setClasse] = useState('');
 
   const handleSelectLevel = (option: Option) => {
+    setLevel(option.value);
+    setClasse('');
+  }
+
+  const handleSelectClasse = (option: Option) => {
     setClasse(option.value);
+  }
+
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  }
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  }
+
+  const handleSubmit = () => {
+    console.log(name);
+    console.log(email);
+    console.log(level);
+    console.log(classe);
   }
 
   return (
@@ -49,17 +72,26 @@ const Register = () => {
           <h1>Regístrese ahora y reciba una de nuestras clases exclusivas</h1>
 
           <form>
-            <input type="text" name="name" placeholder="Su nombre" />
-            <input type="email" name="email" placeholder="Su e-mail" />
+            <input type="text" name="name" placeholder="Su nombre" onChange={handleNameChange} />
+            <input type="email" name="email" placeholder="Su e-mail" onChange={handleEmailChange} />
             <Select 
-              options={level} 
+              options={levelOptions} 
               placeholder="Su nivel educativo" 
               onChange={(option) => handleSelectLevel((option as Option))} 
-              value={level.filter(item => item.value === classe)}
+              value={levelOptions.filter(item => item.value === level)}
             />
-            <Select options={classes[classe]} placeholder="Su grado escolar" />
+            <Select 
+              options={classesOptions[level]} 
+              placeholder="Su grado escolar"
+              onChange={(option) => handleSelectClasse((option as Option))} 
+              value={classesOptions[level].filter(item => item.value === classe)}
+            />
             
-            <button>
+            <button 
+              type="button"
+              disabled={!name || !email || !level || !classe}
+              onClick={handleSubmit}
+            >
               Obtener clase
             </button>
           </form>
