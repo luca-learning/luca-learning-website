@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9eb1f485c944ac9df4c6a862c918df6",
+    "revision": "01097478f608cf0857806c014c9ead10",
     "url": "/luca-learning-website/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/luca-learning-website/static/js/2.cafa1acc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71faa7aff560f4edb041",
-    "url": "/luca-learning-website/static/js/main.edcae38a.chunk.js"
+    "revision": "3aa31a58d8376d83a793",
+    "url": "/luca-learning-website/static/js/main.b8853a68.chunk.js"
   },
   {
     "revision": "7a811c3f7cb2042a5755",
