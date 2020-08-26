@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/luca-learning-website/precache-manifest.671097d63126f704e12e10627a64bc8a.js"
+  "/luca-learning-website/precache-manifest.a1fd9209a8d38d26e08515a425dbed9a.js"
 );
 
 self.addEventListener('message', (event) => {
