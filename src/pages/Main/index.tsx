@@ -6,7 +6,7 @@ import Welcome from '../../components/Sections/Welcome';
 import Products from '../../components/Sections/Products';
 import Advantages from '../../components/Sections/Advantages';
 import Parents from '../../components/Sections/Parents';
-import Contenido from '../../components/Sections/Contenido';
+import Content from '../../components/Sections/Content';
 import Footer from '../../components/Sections/Footer';
 
 import useSticky from '../../hooks/useSticky';
@@ -24,12 +24,13 @@ function Main() {
   return (
     <Container>
       <Header sticky={isSticky} />
-
       <Welcome element={element} />
+
       <Products />
       <Advantages />
-      <Parents />
-      <Contenido />
+      <Content />
+      <Parents />   
+      
       <Footer />
 
       <GlobalStyles />
