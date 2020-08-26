@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { AiOutlineClose } from 'react-icons/ai';
 
 import { Container, StyledBurger, StyledMenu } from './styles';
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   sticky: boolean;
@@ -21,7 +22,7 @@ interface MenuProps {
 }
 
 const redirectTo = (section: string) => {
-  document.location.href = `/#${section}`;
+  document.location.href = `/luca-learning-website#/?section=${section}`;
 }
 
 const handleHowWork = (
@@ -127,7 +128,7 @@ const Header = ({ sticky, isMain }: HeaderProps) => {
       <header>
         <div>
           <h1>
-            <a href="/">Luca</a>
+            <Link to="/">Luca</Link>
             <span>.</span>
           </h1>
         </div>

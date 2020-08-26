@@ -9,6 +9,7 @@ const Routes: React.FC = () => {
   return (
     <>
       <Route path="/" exact component={Main} />
+      <Route path="/luca-learning-website" exact component={Main} />
       <Route path="/about" component={About} />
     </>
   );
