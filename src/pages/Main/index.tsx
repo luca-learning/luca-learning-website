@@ -7,6 +7,7 @@ import Products from '../../components/Sections/Products';
 import Advantages from '../../components/Sections/Advantages';
 import Parents from '../../components/Sections/Parents';
 import Content from '../../components/Sections/Content';
+import Register from '../../components/Sections/Register';
 import Footer from '../../components/Sections/Footer';
 
 import useSticky from '../../hooks/useSticky';
@@ -30,7 +31,9 @@ function Main() {
       <Advantages />
       <Content />
       <Parents />   
-      
+
+      <Register />
+
       <Footer />
 
       <GlobalStyles />

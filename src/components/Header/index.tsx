@@ -36,6 +36,24 @@ const handleParent = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | 
   }
 }
 
+const handleContent = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | undefined) => {
+  const el = document.getElementById("content");
+  el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  if (setOpen) {
+    setOpen(false);
+  }
+}
+
+const handleRegister = (setOpen?: React.Dispatch<React.SetStateAction<boolean>> | undefined) => {
+  const el = document.getElementById("register");
+  el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  if (setOpen) {
+    setOpen(false);
+  }
+}
+
 const Burger = ({ open, setOpen }: BurgerProps) => {
   return (
     <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -58,7 +76,10 @@ const Menu = ({ open, setOpen }: MenuProps) => {
       <button onClick={() => handleParent(setOpen)}>
         Los padres nos aman
       </button>
-      <button>
+      <button onClick={() => handleContent(setOpen)}>
+        Nuestro contenido
+      </button>
+      <button onClick={() => handleRegister(setOpen)}>
         Regístrate ahora
       </button>
     </StyledMenu>
@@ -80,7 +101,10 @@ const Header = ({ sticky }: HeaderProps) => {
         <ul>
           <li onClick={() => handleHowWork()}>Porque estudiar con Luca</li>
           <li onClick={() => handleParent()}>Los padres nos aman</li>
-          <li><button>Regístrate ahora</button></li>
+          <li onClick={() => handleContent()}>Nuestro contenido</li>
+          <li>
+            <button onClick={() => handleRegister()}>Regístrate ahora</button>
+          </li>
         </ul>
         <div className="mobile-menu">
           <Burger open={open} setOpen={setOpen} />

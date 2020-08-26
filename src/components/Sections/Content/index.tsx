@@ -1,16 +1,11 @@
 import React from 'react';
 
-import { GiOnTarget, GiGamepad, GiCalendar } from 'react-icons/gi';
-import { MdQuestionAnswer } from 'react-icons/md';
-
-import pallete from '../../../styles/colors';
-
 import { Container, CardGroup } from './styles';
 
 const Contenido = () => {
   return (
     <Container>
-      <section id="help-you-study">
+      <section id="content">
         <div>
           <h1>Estudia con Luca y los mejores profesores</h1>
 
