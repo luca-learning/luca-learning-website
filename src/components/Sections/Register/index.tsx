@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Select, { ValueType, OptionTypeBase } from 'react-select';
+import Select from 'react-select';
 
 import { Container } from './styles';
 

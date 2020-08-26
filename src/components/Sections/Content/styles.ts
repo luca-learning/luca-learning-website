@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import pallete from '../../../styles/colors';
+import { lighten } from 'polished';
 
 export const Container = styled.div`
   section {
@@ -71,6 +72,10 @@ export const CardGroup = styled.div`
       border: none;
       border-radius: 20px;
       font-weight: 500;
+
+      &:hover {
+        background: ${lighten(0.1, pallete.primary_2)};
+      }
     }
   }
 `;
