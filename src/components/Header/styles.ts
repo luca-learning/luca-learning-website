@@ -60,6 +60,10 @@ export const Container = styled.div<ContainerProps>`
         font-weight: 700;
         cursor: pointer;   
 
+        &:hover {
+          font-size: 18px;
+        }
+
         > button {
           background: ${pallete.secondary_white};
           color: ${pallete.secondary_dark};
