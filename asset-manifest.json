@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/luca-learning-website/static/js/main.b8853a68.chunk.js",
-    "main.js.map": "/luca-learning-website/static/js/main.b8853a68.chunk.js.map",
+    "main.js": "/luca-learning-website/static/js/main.cb70a0d3.chunk.js",
+    "main.js.map": "/luca-learning-website/static/js/main.cb70a0d3.chunk.js.map",
     "runtime-main.js": "/luca-learning-website/static/js/runtime-main.28131ff5.js",
     "runtime-main.js.map": "/luca-learning-website/static/js/runtime-main.28131ff5.js.map",
     "static/css/2.45b22811.chunk.css": "/luca-learning-website/static/css/2.45b22811.chunk.css",
     "static/js/2.cafa1acc.chunk.js": "/luca-learning-website/static/js/2.cafa1acc.chunk.js",
     "static/js/2.cafa1acc.chunk.js.map": "/luca-learning-website/static/js/2.cafa1acc.chunk.js.map",
     "index.html": "/luca-learning-website/index.html",
-    "precache-manifest.59910df217c89ef740fe46a6f316b987.js": "/luca-learning-website/precache-manifest.59910df217c89ef740fe46a6f316b987.js",
+    "precache-manifest.b2a0921993e3e1ca997045622926d42a.js": "/luca-learning-website/precache-manifest.b2a0921993e3e1ca997045622926d42a.js",
     "service-worker.js": "/luca-learning-website/service-worker.js",
     "static/css/2.45b22811.chunk.css.map": "/luca-learning-website/static/css/2.45b22811.chunk.css.map",
     "static/js/2.cafa1acc.chunk.js.LICENSE.txt": "/luca-learning-website/static/js/2.cafa1acc.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.28131ff5.js",
     "static/css/2.45b22811.chunk.css",
     "static/js/2.cafa1acc.chunk.js",
-    "static/js/main.b8853a68.chunk.js"
+    "static/js/main.cb70a0d3.chunk.js"
   ]
 }
