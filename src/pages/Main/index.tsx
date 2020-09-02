@@ -27,7 +27,6 @@ const Main: React.FC = () => {
     const section = search.split('?section=')[1];
     const el = document.getElementById(section);
     el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    
   }, [search]);
 
   return (
